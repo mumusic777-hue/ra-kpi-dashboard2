@@ -536,9 +536,21 @@ const SAMPLE_DATA = {
         p1: {
           フォーム送信数: { 森:0,  浅沼:0,  安木:0,  山本:0 },
           返信数:        { 森:0,  浅沼:0,  安木:0,  山本:0 },
-          アポイント数:   { 森:5,  浅沼:4,  安木:0,  山本:2 },
+          アポイント数:   { 森:7,  浅沼:4,  安木:0,  山本:4 },
           商談数:        { 森:5,  浅沼:0,  安木:0,  山本:0 },
           契約締結数:    { 森:1,  浅沼:0,  安木:0,  山本:0 },
+        },
+        p2: {
+          AZ: { 森:0, 浅沼:0, 安木:0, 山本:0 },
+        },
+      },
+      5: {
+        p1: {
+          フォーム送信数: { 森:0,  浅沼:0,  安木:0,  山本:0 },
+          返信数:        { 森:0,  浅沼:0,  安木:0,  山本:0 },
+          アポイント数:   { 森:0,  浅沼:0,  安木:0,  山本:0 },
+          商談数:        { 森:0,  浅沼:0,  安木:0,  山本:0 },
+          契約締結数:    { 森:0,  浅沼:0,  安木:0,  山本:0 },
         },
         p2: {
           AZ: { 森:0, 浅沼:0, 安木:0, 山本:0 },
@@ -739,13 +751,26 @@ function monthLabel(ym) {
   return `${y}年${parseInt(m)}月`;
 }
 
-// 週番号 → その週の開始・終了日を返す
+// 週番号 → その週の開始・終了日を返す（月曜〜日曜）
 function weekDateRange(ym, wn) {
   const [y, m] = ym.split("-").map(Number);
-  const starts = { 1: 1, 2: 8, 3: 15, 4: 22 };
-  const start   = starts[wn] || 1;
-  const lastDay = new Date(y, m, 0).getDate(); // 月末日
-  const end     = wn >= 4 ? lastDay : (starts[wn + 1] || 29) - 1;
+  const lastDay = new Date(y, m, 0).getDate();
+  // 月の1日が何曜日か (JS: 0=日, 1=月, ..., 6=土)
+  const firstDayWeekday = new Date(y, m - 1, 1).getDay();
+  // 最初の月曜日まで何日必要か (日曜=1日後, 月曜=0日後, 土曜=2日後)
+  const daysToMonday = (8 - firstDayWeekday) % 7;
+  const firstMonday  = 1 + daysToMonday;
+  // 第1週: 1日 〜 最初の日曜日
+  // 第N週: firstMonday + (N-1)*7 〜 firstMonday + N*7 - 1
+  let start, end;
+  if (wn === 1) {
+    start = 1;
+    end   = Math.min(firstMonday + 6, lastDay);
+  } else {
+    start = firstMonday + (wn - 1) * 7;
+    end   = Math.min(start + 6, lastDay);
+    if (start > lastDay) return null;
+  }
   return { y, m, start, end };
 }
 
