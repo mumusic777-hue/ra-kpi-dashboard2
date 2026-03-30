@@ -578,8 +578,8 @@ const SAMPLE_DATA = {
     },
     // KGI
     kgi: {
-      森:   { 粗利実績:2640156, 粗利目標:1800000, 売上実績:12106080 },
-      浅沼: { 粗利実績:270000,  粗利目標:540000,  売上実績:900000   },
+      森:   { 粗利実績:2732556, 粗利目標:1800000, 売上実績:0 },
+      浅沼: { 粗利実績:270000,  粗利目標:540000,  売上実績:0   },
       安木: { 粗利実績:0,       粗利目標:540000,  売上実績:0        },
       山本: { 粗利実績:0,       粗利目標:0,       売上実績:0        },
     },
@@ -711,7 +711,10 @@ function mergeFullData(d) {
     }
     if (mData.kgi) {
       rm.kgi = rm.kgi || {};
-      for (const [k, v] of Object.entries(mData.kgi)) rm.kgi[k] = v;
+      // メンバーごとに深くマージ（粗利目標など SAMPLE_DATA のキーを保持しつつ実績値を上書き）
+      for (const [k, v] of Object.entries(mData.kgi)) {
+        rm.kgi[k] = Object.assign({}, rm.kgi[k] || {}, v);
+      }
     }
   }
   if (d.lastUpdated) {
