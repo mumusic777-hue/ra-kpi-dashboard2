@@ -23,6 +23,8 @@ import os
 import csv
 import io
 import re
+import json
+import subprocess
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone, timedelta
@@ -221,6 +223,57 @@ def update_kgi_in_html(content: str, ym: str, member_values: dict) -> tuple[str,
 
 
 # =====================================================================
+# data.json 書き込み（即時反映用）
+# =====================================================================
+DATA_JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json")
+
+def write_data_json(ym: str, member_values: dict, now: datetime):
+    """KGI データ（売上実績・粗利実績）を data.json に書き込む。"""
+    try:
+        with open(DATA_JSON_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        data = {}
+
+    data.setdefault(ym, {})
+    data[ym].setdefault("kgi", {})
+    for member, vals in member_values.items():
+        data[ym]["kgi"].setdefault(member, {})
+        # 0 の場合は SAMPLE_DATA のフォールバック値を保持するためスキップ
+        if vals["売上実績"] > 0:
+            data[ym]["kgi"][member]["売上実績"] = vals["売上実績"]
+        if vals["粗利実績"] > 0:
+            data[ym]["kgi"][member]["粗利実績"] = vals["粗利実績"]
+
+    data["lastUpdated"] = now.strftime("%Y-%m-%dT%H:%M:%S+09:00")
+    with open(DATA_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  💾 data.json を更新しました（kgi: {ym}）")
+
+
+def git_push(now: datetime):
+    """data.json を git add → commit → push する。"""
+    repo_dir = os.path.dirname(os.path.abspath(__file__))
+    date_str  = now.strftime("%Y-%m-%d")
+    msg       = f"auto: update kgi {date_str}"
+    try:
+        subprocess.run(["git", "-C", repo_dir, "add", "data.json"],
+                       check=True, capture_output=True)
+        result = subprocess.run(["git", "-C", repo_dir, "diff", "--cached", "--quiet"],
+                                capture_output=True)
+        if result.returncode == 0:
+            print("  ℹ️  data.json に変更なし。git push をスキップしました")
+            return
+        subprocess.run(["git", "-C", repo_dir, "commit", "-m", msg],
+                       check=True, capture_output=True)
+        subprocess.run(["git", "-C", repo_dir, "push"],
+                       check=True, capture_output=True)
+        print(f"  🚀 GitHub へ push 完了: {msg}")
+    except subprocess.CalledProcessError as e:
+        print(f"  ⚠️  git push 失敗（ローカルは更新済み）: {e.stderr.decode(errors='replace').strip()}")
+
+
+# =====================================================================
 # メイン更新処理
 # =====================================================================
 def update_html(member_values: dict):
@@ -263,6 +316,8 @@ def main():
         return
 
     update_html(member_values)
+    write_data_json(ym, member_values, now)
+    git_push(now)
     print(f"[完了] {datetime.now(JST).strftime('%Y-%m-%d %H:%M:%S JST')}")
 
 
