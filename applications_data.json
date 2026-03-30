@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-24T20:06:13.896475+09:00",
+  "lastUpdated": "2026-03-30T15:42:24.145757+09:00",
   "snapshots": [
     {
       "fetchedAt": "2026-03-24T20:06:13.896475+09:00",
@@ -1972,6 +1972,2013 @@
         },
         {
           "name": "楽天ペイメント株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        }
+      ]
+    },
+    {
+      "fetchedAt": "2026-03-30T15:42:24.145757+09:00",
+      "weekLabel": "2026/03/30",
+      "db": {
+        "weekly": {
+          "thisWeek": {
+            "total": 12,
+            "circus": 11,
+            "crowdAgent": 0,
+            "jobins": 1,
+            "growthTotal": "7.55%",
+            "growthCircus": "7.86%",
+            "growthCA": "0.00%",
+            "growthJobins": "6.67%"
+          },
+          "lastWeek": {
+            "total": 159,
+            "circus": 140,
+            "crowdAgent": 4,
+            "jobins": 15,
+            "growthTotal": "104.61%",
+            "growthCircus": "102.19%",
+            "growthCA": "0.00%",
+            "growthJobins": "100.00%"
+          },
+          "twoWeeksAgo": {
+            "total": 152,
+            "circus": 137,
+            "crowdAgent": 0,
+            "jobins": 15,
+            "growthTotal": "-",
+            "growthCircus": "-",
+            "growthCA": "-",
+            "growthJobins": "-"
+          }
+        },
+        "monthly": {
+          "thisMonth": {
+            "total": 707,
+            "circus": 633,
+            "crowdAgent": 10,
+            "jobins": 64,
+            "growthTotal": "105.21%",
+            "growthCircus": "109.14%",
+            "growthCA": "62.50%",
+            "growthJobins": "84.21%"
+          },
+          "lastMonth": {
+            "total": 672,
+            "circus": 580,
+            "crowdAgent": 16,
+            "jobins": 76,
+            "growthTotal": "112.00%",
+            "growthCircus": "109.23%",
+            "growthCA": "0.00%",
+            "growthJobins": "110.14%"
+          },
+          "twoMonthsAgo": {
+            "total": 600,
+            "circus": 531,
+            "crowdAgent": 0,
+            "jobins": 69,
+            "growthTotal": "-",
+            "growthCircus": "-",
+            "growthCA": "-",
+            "growthJobins": "-"
+          }
+        }
+      },
+      "split": {
+        "weekly": {
+          "thisWeek": {
+            "total": 12,
+            "alliance": 11,
+            "own": 1,
+            "growthTotal": "7.55%",
+            "growthAlliance": "8.94%",
+            "growthOwn": "2.78%"
+          },
+          "lastWeek": {
+            "total": 159,
+            "alliance": 123,
+            "own": 36,
+            "growthTotal": "104.61%",
+            "growthAlliance": "110.81%",
+            "growthOwn": "87.80%"
+          },
+          "twoWeeksAgo": {
+            "total": 152,
+            "alliance": 111,
+            "own": 41,
+            "growthTotal": "-",
+            "growthAlliance": "-",
+            "growthOwn": "-"
+          }
+        },
+        "monthly": {
+          "thisMonth": {
+            "total": 707,
+            "alliance": 517,
+            "own": 190,
+            "growthTotal": "105.21%",
+            "growthAlliance": "106.82%",
+            "growthOwn": "101.06%"
+          },
+          "lastMonth": {
+            "total": 672,
+            "alliance": 484,
+            "own": 188,
+            "growthTotal": "112.00%",
+            "growthAlliance": "103.64%",
+            "growthOwn": "141.35%"
+          },
+          "twoMonthsAgo": {
+            "total": 600,
+            "alliance": 467,
+            "own": 133,
+            "growthTotal": "-",
+            "growthAlliance": "-",
+            "growthOwn": "-"
+          }
+        }
+      },
+      "companies": [
+        {
+          "name": "株式会社アイドマ・ホールディングス",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 3,
+          "monthlyThis": 7,
+          "monthlyLast": 6,
+          "monthlyPrev": 9
+        },
+        {
+          "name": "株式会社ワークポート",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 5,
+          "monthlyLast": 8,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "Sansan株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 1,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社クオレガ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 2,
+          "monthlyThis": 4,
+          "monthlyLast": 1,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社ポジティブドリームパーソンズ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 4
+        },
+        {
+          "name": "株式会社ワールドインテック　WORLD INTEC CO.,LTD.",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 10,
+          "monthlyThis": 19,
+          "monthlyLast": 7,
+          "monthlyPrev": 15
+        },
+        {
+          "name": "株式会社BREXA Technology",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 5,
+          "monthlyPrev": 10
+        },
+        {
+          "name": "株式会社NECT",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 3,
+          "monthlyThis": 18,
+          "monthlyLast": 12,
+          "monthlyPrev": 4
+        },
+        {
+          "name": "株式会社マーキュリー",
+          "weeklyThis": 0,
+          "weeklyLast": 7,
+          "weeklyPrev": 2,
+          "monthlyThis": 28,
+          "monthlyLast": 12,
+          "monthlyPrev": 16
+        },
+        {
+          "name": "株式会社アーキ・ジャパン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 4,
+          "monthlyPrev": 18
+        },
+        {
+          "name": "株式会社kubell",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 2,
+          "monthlyThis": 11,
+          "monthlyLast": 17,
+          "monthlyPrev": 7
+        },
+        {
+          "name": "株式会社テクノプロ・デザイン社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 13
+        },
+        {
+          "name": "レバレジーズ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 3,
+          "monthlyThis": 9,
+          "monthlyLast": 16,
+          "monthlyPrev": 16
+        },
+        {
+          "name": "アドバンサー株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 4,
+          "monthlyThis": 10,
+          "monthlyLast": 11,
+          "monthlyPrev": 12
+        },
+        {
+          "name": "日研トータルソーシング株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 2,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社ファインズ",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 2,
+          "monthlyThis": 6,
+          "monthlyLast": 4,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社モバイルコミュニケーションズ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 8
+        },
+        {
+          "name": "株式会社テクノプロ・デザイン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 3,
+          "monthlyThis": 5,
+          "monthlyLast": 2,
+          "monthlyPrev": 7
+        },
+        {
+          "name": "マンパワーグループ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 4,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社クウゼン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社BOX",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 2,
+          "monthlyThis": 4,
+          "monthlyLast": 5,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社コプロコンストラクション",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社夢真",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "JAGフィールド株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社ワールドコーポレーション",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "ウィルオブコンストラクション",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社アルプス技研",
+          "weeklyThis": 0,
+          "weeklyLast": 7,
+          "weeklyPrev": 3,
+          "monthlyThis": 17,
+          "monthlyLast": 12,
+          "monthlyPrev": 11
+        },
+        {
+          "name": "SB C&S株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 2,
+          "monthlyThis": 12,
+          "monthlyLast": 11,
+          "monthlyPrev": 13
+        },
+        {
+          "name": "UTエイム株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社セラク",
+          "weeklyThis": 0,
+          "weeklyLast": 5,
+          "weeklyPrev": 1,
+          "monthlyThis": 16,
+          "monthlyLast": 18,
+          "monthlyPrev": 16
+        },
+        {
+          "name": "アデコ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 4,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社データX",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 2,
+          "monthlyPrev": 6
+        },
+        {
+          "name": "セコム株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "アフラック保険サービス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "データアナリティクスラボ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社GOOYA",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 4,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社wevnal",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 4,
+          "monthlyLast": 5,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社GREEN RIBBON STAFFING",
+          "weeklyThis": 0,
+          "weeklyLast": 17,
+          "weeklyPrev": 16,
+          "monthlyThis": 71,
+          "monthlyLast": 70,
+          "monthlyPrev": 48
+        },
+        {
+          "name": "Ubie株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "JHR株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 5,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社ADKデジタル・コミュニケーションズ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社Speee",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 2,
+          "monthlyThis": 9,
+          "monthlyLast": 10,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社リクルートスタッフィング",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 2,
+          "monthlyThis": 2,
+          "monthlyLast": 8,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社フェローシップ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社PEEES",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 2,
+          "monthlyThis": 4,
+          "monthlyLast": 2,
+          "monthlyPrev": 4
+        },
+        {
+          "name": "株式会社ラクス",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 3,
+          "monthlyThis": 7,
+          "monthlyLast": 4,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社ナレソメ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 13
+        },
+        {
+          "name": "パーソルクロステクノロジー株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社王将フードサービス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社NEXTスタッフサービス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社Sun terras",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "バリュエンスホールディングス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 5,
+          "monthlyThis": 11,
+          "monthlyLast": 9,
+          "monthlyPrev": 8
+        },
+        {
+          "name": "株式会社Translead",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "スパイダープラス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 3,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社ライズ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社サイバーエージェント",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 3,
+          "monthlyThis": 8,
+          "monthlyLast": 1,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社HAL",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社プロジェクトカンパニー",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 4,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "アクサス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 3,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "jinjer株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "XMile株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 7,
+          "monthlyLast": 7,
+          "monthlyPrev": 16
+        },
+        {
+          "name": "朝日新聞グループ 株式会社 ASC",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ブルード",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 2,
+          "monthlyThis": 7,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "ハーバーハウス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 1,
+          "monthlyThis": 5,
+          "monthlyLast": 5,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社Fact Base",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 3,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "DSP株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 2,
+          "monthlyThis": 3,
+          "monthlyLast": 2,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社PLETECH",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 3,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社マネーフォワード/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 3,
+          "monthlyThis": 9,
+          "monthlyLast": 8,
+          "monthlyPrev": 6
+        },
+        {
+          "name": "株式会社SEVENRICH Accounting",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社Rush up",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社STYLE",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ノースサンド",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 5,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社ZERO TALENT",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "CTCシステムマネジメント株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社EmpowerX",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "リンクタイズ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 1,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社リレーション",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 3,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "GOジョブ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 4
+        },
+        {
+          "name": "株式会社コムニコ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 4,
+          "monthlyLast": 2,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社ぐるなび/",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 0,
+          "monthlyThis": 10,
+          "monthlyLast": 14,
+          "monthlyPrev": 8
+        },
+        {
+          "name": "株式会社カンリー",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 4,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "リクルートスタッフィング情報サービス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社マイナビワークス",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 4,
+          "monthlyLast": 5,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社綜合キャリアオプション",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社DYMキャリア",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社HRBrain",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "共同エンジニアリング株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "ダイキンエアテクノ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社IDOM",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社Y‘s",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社ミギナナメウエ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 2,
+          "monthlyThis": 3,
+          "monthlyLast": 3,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社スタイル・エッジ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "エヌエス・テック株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "Evand株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社松屋フーズホールディングス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社イーダブルジー",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社アーキベース",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 3,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社Add Flow",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 5,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社マイナビ/",
+          "weeklyThis": 0,
+          "weeklyLast": 13,
+          "weeklyPrev": 7,
+          "monthlyThis": 57,
+          "monthlyLast": 48,
+          "monthlyPrev": 52
+        },
+        {
+          "name": "キャディ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 3,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社STAIR",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社エール",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社くすりの窓口",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "インハウスコミット株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "AKKODiSコンサルティング株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 4,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "スパイラル株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社AimForward",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 3,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "旭化成ホームズ",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 2,
+          "monthlyThis": 3,
+          "monthlyLast": 3,
+          "monthlyPrev": 6
+        },
+        {
+          "name": "エー・アール・システム株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "東急リニューアル株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ピアズ",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社Nexil",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "日の出工芸株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社スタディスト",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 1,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社ブリッジワン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 2,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社ログラス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社irodas",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 4,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "ケイアイスター不動産株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "大東建託株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "マークスライフ株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "NKインターナショナル",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ワールドフェイマス",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社アウトソーシングテクノロジー R&amp;D事業部",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社free mova",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "住友不動産ハウジング株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 6,
+          "weeklyPrev": 3,
+          "monthlyThis": 18,
+          "monthlyLast": 14,
+          "monthlyPrev": 10
+        },
+        {
+          "name": "株式会社SP",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 4,
+          "monthlyLast": 13,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社マルチテック",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "長印船橋青果株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社セラクCCC",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 6,
+          "monthlyLast": 8,
+          "monthlyPrev": 6
+        },
+        {
+          "name": "ラクスル株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "GRAND株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社テクノプロ*",
+          "weeklyThis": 0,
+          "weeklyLast": 7,
+          "weeklyPrev": 7,
+          "monthlyThis": 29,
+          "monthlyLast": 19,
+          "monthlyPrev": 30
+        },
+        {
+          "name": "株式会社悟空テクノロジーズ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "日本ディクス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "住友不動産株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 2,
+          "monthlyThis": 10,
+          "monthlyLast": 12,
+          "monthlyPrev": 11
+        },
+        {
+          "name": "株式会社フォトシンス/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "HRプロビジョン株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 1,
+          "monthlyThis": 9,
+          "monthlyLast": 21,
+          "monthlyPrev": 5
+        },
+        {
+          "name": "株式会社ジーニー",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社カナメ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社Dr.健康経営",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社横尾材木店",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 7
+        },
+        {
+          "name": "株式会社feat",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社Works Human Intelligence/",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 0,
+          "monthlyThis": 5,
+          "monthlyLast": 9,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "日本ヒルティ株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 2,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社bond(ツナグ)",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 1,
+          "monthlyThis": 12,
+          "monthlyLast": 15,
+          "monthlyPrev": 4
+        },
+        {
+          "name": "株式会社LITALICO*",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "保険サービスシステムHD株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "アライ電機産業株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "山金工業株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社LIFULL/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 3,
+          "monthlyLast": 8,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "株式会社BREXA Communications",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 2,
+          "monthlyThis": 10,
+          "monthlyLast": 13,
+          "monthlyPrev": 6
+        },
+        {
+          "name": "株式会社コズレ",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "ディープラス株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 3,
+          "monthlyPrev": 3
+        },
+        {
+          "name": "株式会社ヒトタス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 2,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社アントワークス",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社Live Search/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社FunClock",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社テクノプロ・テクノプロデザイン社",
+          "weeklyThis": 0,
+          "weeklyLast": 7,
+          "weeklyPrev": 3,
+          "monthlyThis": 23,
+          "monthlyLast": 15,
+          "monthlyPrev": 8
+        },
+        {
+          "name": "株式会社DNS",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 3,
+          "monthlyLast": 3,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "アンプトーク株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "日本交通株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社コプロテクノロジー",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社東京精密/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "吉福エンジニアリング株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 1
+        },
+        {
+          "name": "株式会社テクノプロ・テクノプロデザイン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 2
+        },
+        {
+          "name": "NTT西日本ビジネスフロント株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 2,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社レバキャリ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社オープンアップITエンジニア",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 1,
+          "monthlyThis": 5,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "合同会社HACS",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社タイミー*",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 6,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社佐渡島",
+          "weeklyThis": 0,
+          "weeklyLast": 3,
+          "weeklyPrev": 1,
+          "monthlyThis": 8,
+          "monthlyLast": 2,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社エコリング",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 4,
+          "monthlyLast": 11,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社インテック/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 7,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社NEXT CONSTRUCTION",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 2,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 4,
+          "weeklyPrev": 0,
+          "monthlyThis": 10,
+          "monthlyLast": 17,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社エコリンクワン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 8,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "ユアサ商事株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 2,
+          "weeklyPrev": 2,
+          "monthlyThis": 8,
+          "monthlyLast": 7,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "パーソルキャリア株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社 SPIN TECHNOLOGY",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社アクティアス",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 2,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "NECネッツエスアイ株式会社*",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 4,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "ユニコントロールズ株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社エルライン",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社 ONE-TECH",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ZOSTEC",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "ALJOY株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "トヨタ自動車株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 1,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社貴瞬*",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社木下グループ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社Charm",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ドワンゴ*",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "鈴与株式会社*",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "イオンネクストデリバリー株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "日綜産業株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "保険サービスシステムHD株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "トランスコスモス株式会社*",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社FIT PLACE",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社BREXA Engineering",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社リクソル",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 1,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "CTCファーストコンタクト株式会社 /",
+          "weeklyThis": 0,
+          "weeklyLast": 1,
+          "weeklyPrev": 1,
+          "monthlyThis": 2,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ウィルオブ・ワーク",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社マネーフォワード",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社コトラ",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "atama plus株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社TERASS",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "楽天ペイメント株式会社/",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "アビームコンサルティング株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "大和財託株式会社",
+          "weeklyThis": 0,
+          "weeklyLast": 0,
+          "weeklyPrev": 0,
+          "monthlyThis": 0,
+          "monthlyLast": 0,
+          "monthlyPrev": 0
+        },
+        {
+          "name": "株式会社ミライロ",
           "weeklyThis": 0,
           "weeklyLast": 0,
           "weeklyPrev": 0,
