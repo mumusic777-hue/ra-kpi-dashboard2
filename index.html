@@ -685,11 +685,12 @@ function mergeGASData(gasData) {
 
 /**
  * data.json（フル構造）を SAMPLE_DATA にマージして返す。
- * data.json のキーが SAMPLE_DATA より優先される。
- * "YYYY-MM" 形式でないキー（旧 "az" キー等）はスキップ。
+ * 1. 旧 "az" キー形式（GAS 互換）を mergeGASData で先に適用
+ * 2. 新 "YYYY-MM" キー形式を上書き適用（優先）
  */
 function mergeFullData(d) {
-  const base = JSON.parse(JSON.stringify(SAMPLE_DATA));
+  // 旧 az キー形式を先に適用（後方互換: GAS 由来の AZ データを保持）
+  const base = mergeGASData(d);
   for (const [ym, mData] of Object.entries(d)) {
     if (!/^\d{4}-\d{2}$/.test(ym)) continue;
     if (!base[ym]) {
