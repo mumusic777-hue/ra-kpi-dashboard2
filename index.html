@@ -2042,7 +2042,8 @@ function setMediaTab(name) {
 
 async function loadAppData() {
   try {
-    const res = await fetch("./applications_data.json");
+    const rawUrl = "https://raw.githubusercontent.com/mumusic777-hue/ra-kpi-dashboard2/main/applications_data.json?_=" + Date.now();
+    const res = await fetch(rawUrl);
     if (!res.ok) throw new Error("HTTP " + res.status);
     const d = await res.json();
     console.info("[applications_data.json] loaded:", d.snapshots?.length, "snapshots");
