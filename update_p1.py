@@ -374,6 +374,14 @@ def write_data_json(ym: str, aggregated: dict, now: datetime):
     data.setdefault(ym, {})
     data[ym].setdefault("weeks", {})
     for wn, week_data in aggregated.items():
+        # データが全員0の週はスキップ（空週をdata.jsonに作らない）
+        has_data = any(
+            week_data[f].get(m, 0) > 0
+            for f in ("アポイント数", "商談数", "契約締結数")
+            for m in MEMBERS
+        )
+        if not has_data:
+            continue
         wn_str = str(wn)
         data[ym]["weeks"].setdefault(wn_str, {})
         data[ym]["weeks"][wn_str].setdefault("p1", {})
