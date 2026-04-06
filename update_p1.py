@@ -15,10 +15,9 @@ RA KPI Dashboard - パイプライン① 新規開拓 自動更新
   Y列 (index 24): 現在のステータス        → 「既存対応」は全項目から除外
 
 週の定義 (index.html の weekDateRange() に合わせる):
-  第1週: 1日〜7日
-  第2週: 8日〜14日
-  第3週: 15日〜21日
-  第4週: 22日〜月末
+  月の最初の月曜を起点に月曜〜日曜で区切る。
+  月初が月曜でない場合、1日〜最初の月曜前日は第1週に含める。
+  月によって第5週が発生する場合がある。
 
 【事前準備】
   スプレッドシートを「リンクを知っている全員が閲覧可」に設定してください。
@@ -29,6 +28,7 @@ import os
 import csv
 import io
 import re
+import json
 import subprocess
 import urllib.request
 import urllib.error
@@ -53,15 +53,16 @@ COL_SHADAN     = 20  # U列: 初回商談日
 COL_KEIYAKU    = 23  # X列: 契約締結日
 COL_STATUS     = 24  # Y列: 現在のステータス
 
-MEMBERS        = ["森", "浅沼", "安木", "山本"]
+MEMBERS        = ["森", "浅沼", "山本"]
 EXCLUDE_STATUS = "既存対応"
 
 HTML_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index.html")
 JST       = timezone(timedelta(hours=9))
 
-# 週の日付範囲定義
+# 週の日付範囲定義（参考・使用は get_week_ranges() を参照）
+# 月曜〜日曜で区切る。月によって5週になる場合がある。
 WEEK_RANGES = {
-    1: (1, 7),
+    1: (1, 7),   # ← 旧定義（参考）
     2: (8, 14),
     3: (15, 21),
     # 第4週は22日〜月末（動的に計算）
@@ -129,16 +130,30 @@ def parse_date(raw: str):
 # =====================================================================
 def get_week_ranges(year: int, month: int) -> dict:
     """
-    {1: (start_day, end_day), 2: ..., 3: ..., 4: ...} を返す。
-    第4週の終わりは月末日。
+    月曜〜日曜を1週間として {1: (start_day, end_day), ...} を返す。
+    月初が月曜でない場合、1日〜最初の月曜前日は第1週に含める。
+    月によって第5週が発生する場合がある。
     """
     last_day = calendar.monthrange(year, month)[1]
-    return {
-        1: (1, 7),
-        2: (8, 14),
-        3: (15, 21),
-        4: (22, last_day),
-    }
+    # calendar.monthrange()[0]: 0=月曜 ... 6=日曜
+    first_day_weekday = calendar.monthrange(year, month)[0]
+    # 最初の月曜日（1=月曜ならday=1、それ以外は翌月曜）
+    days_to_monday = (7 - first_day_weekday) % 7
+    first_monday = 1 + days_to_monday  # 例: 3月2026は6(日曜)→ days=1 → first_monday=2
+
+    ranges = {}
+    # 第1週: day 1 〜 最初の日曜日 (first_monday + 6)
+    week1_end = min(first_monday + 6, last_day)
+    ranges[1] = (1, week1_end)
+    # 第2週以降: 各月曜〜日曜
+    wn = 2
+    cur_monday = first_monday + 7
+    while cur_monday <= last_day:
+        end_day = min(cur_monday + 6, last_day)
+        ranges[wn] = (cur_monday, end_day)
+        wn += 1
+        cur_monday += 7
+    return ranges
 
 
 def get_week_num(day: int, week_ranges: dict) -> int | None:
@@ -165,9 +180,9 @@ def aggregate(csv_text: str, year: int, month: int) -> dict:
     """
     week_ranges = get_week_ranges(year, month)
 
-    # 結果を 0 初期化
+    # 結果を 0 初期化（週数は動的）
     result = {}
-    for wn in range(1, 5):
+    for wn in week_ranges.keys():
         result[wn] = {
             "アポイント数":  {m: 0 for m in MEMBERS},
             "商談数":        {m: 0 for m in MEMBERS},
@@ -284,28 +299,23 @@ def get_week_segment(month_seg: str, week_num: int):
 def replace_p1_field(week_seg: str, field: str, vals: dict) -> tuple[str, bool]:
     """
     week_seg 内の p1 フィールド（アポイント数/商談数/契約締結数）を更新。
+    MEMBERS リストから動的にパターンを生成。
     """
-    森    = vals.get("森", 0)
-    浅沼  = vals.get("浅沼", 0)
-    安木  = vals.get("安木", 0)
-    山本  = vals.get("山本", 0)
+    # パターン: フィールド名: { メンバー1:N, メンバー2:N, ... }
+    member_pattern = r'(\s*,\s*)'.join(
+        rf'{re.escape(m)}\s*:\s*\d+' for m in MEMBERS
+    )
+    pattern = rf'({re.escape(field)}\s*:\s*\{{\s*)' + member_pattern + r'(\s*\})'
 
-    pattern = (
-        rf'({re.escape(field)}\s*:\s*\{{\s*)'
-        r'森\s*:\s*\d+'
-        r'(\s*,\s*)浅沼\s*:\s*\d+'
-        r'(\s*,\s*)安木\s*:\s*\d+'
-        r'(\s*,\s*)山本\s*:\s*\d+'
-        r'(\s*\})'
-    )
-    replacement = (
-        rf'\g<1>'
-        rf'森:{森}'
-        rf'\g<2>浅沼:{浅沼}'
-        rf'\g<3>安木:{安木}'
-        rf'\g<4>山本:{山本}'
-        rf'\g<5>'
-    )
+    # 置換文字列を動的に生成
+    parts = [r'\g<1>']
+    for i, m in enumerate(MEMBERS):
+        if i > 0:
+            parts.append(rf'\g<{i + 1}>')
+        parts.append(f'{m}:{vals.get(m, 0)}')
+    parts.append(rf'\g<{len(MEMBERS) + 1}>')
+    replacement = ''.join(parts)
+
     new_seg, count = re.subn(pattern, replacement, week_seg, count=1)
     return new_seg, count > 0
 
@@ -339,10 +349,8 @@ def update_html(content: str, ym: str, aggregated: dict) -> tuple[str, int]:
                 week_seg = new_week_seg
                 week_changed = True
                 total_updates += 1
-                print(
-                    f"  ✅ 第{week_num}週 {field}: "
-                    f"森={vals['森']} 浅沼={vals['浅沼']} 安木={vals['安木']} 山本={vals['山本']}"
-                )
+                member_str = " ".join(f"{m}={vals.get(m, 0)}" for m in MEMBERS)
+                print(f"  ✅ 第{week_num}週 {field}: {member_str}")
             else:
                 print(f"  ⚠️  第{week_num}週 {field} のパターンが見つかりませんでした")
 
@@ -353,20 +361,50 @@ def update_html(content: str, ym: str, aggregated: dict) -> tuple[str, int]:
 
 
 # =====================================================================
+# data.json 書き込み（即時反映用）
+# =====================================================================
+def write_data_json(ym: str, aggregated: dict, now: datetime):
+    """
+    p1 データ（アポイント数/商談数/契約締結数）を data.json に書き込む。
+    HTML は変更せず、data.json のみ更新することで GitHub Raw 経由の即時反映を実現。
+    """
+    data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json")
+    try:
+        with open(data_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        data = {}
+
+    data.setdefault(ym, {})
+    data[ym].setdefault("weeks", {})
+    for wn, week_data in aggregated.items():
+        wn_str = str(wn)
+        data[ym]["weeks"].setdefault(wn_str, {})
+        data[ym]["weeks"][wn_str].setdefault("p1", {})
+        for field in ("アポイント数", "商談数", "契約締結数"):
+            data[ym]["weeks"][wn_str]["p1"][field] = week_data[field]
+
+    data["lastUpdated"] = now.strftime("%Y-%m-%dT%H:%M:%S+09:00")
+    with open(data_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  💾 data.json を更新しました（p1: {ym}）")
+
+
+# =====================================================================
 # GitHub へ自動プッシュ
 # =====================================================================
 def git_push(now: datetime):
-    """index.html を git add → commit → push する。失敗してもスクリプトは続行。"""
+    """data.json を git add → commit → push する。失敗してもスクリプトは続行。"""
     repo_dir = os.path.dirname(os.path.abspath(__file__))
     date_str  = now.strftime("%Y-%m-%d")
     msg       = f"auto: update p1 pipeline {date_str}"
     try:
-        subprocess.run(["git", "-C", repo_dir, "add", "index.html"],
+        subprocess.run(["git", "-C", repo_dir, "add", "data.json"],
                        check=True, capture_output=True)
         result = subprocess.run(["git", "-C", repo_dir, "diff", "--cached", "--quiet"],
                                 capture_output=True)
         if result.returncode == 0:
-            print("  ℹ️  index.html に変更なし。git push をスキップしました")
+            print("  ℹ️  data.json に変更なし。git push をスキップしました")
             return
         subprocess.run(["git", "-C", repo_dir, "commit", "-m", msg],
                        check=True, capture_output=True)
@@ -400,7 +438,7 @@ def main():
     aggregated = aggregate(csv_text, year, month)
 
     # 集計結果サマリー表示
-    for wn in range(1, 5):
+    for wn in sorted(aggregated.keys()):
         for field in ("アポイント数", "商談数", "契約締結数"):
             vals = aggregated[wn][field]
             total = sum(vals.values())
@@ -415,13 +453,14 @@ def main():
     new_content, updates = update_html(content, ym, aggregated)
 
     if updates == 0:
-        print("  ⚠️  更新できた項目がありませんでした")
-        return
+        print("  ⚠️  index.html の更新項目なし（新月度の場合は正常）")
+    else:
+        with open(HTML_PATH, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"  💾 index.html を保存しました（{updates}項目更新）")
 
-    with open(HTML_PATH, "w", encoding="utf-8") as f:
-        f.write(new_content)
-
-    print(f"  💾 index.html を保存しました（{updates}項目更新）")
+    # data.json は HTML 更新の成否に関わらず書き込む
+    write_data_json(ym, aggregated, now)
     git_push(now)
     print(f"[完了] {datetime.now(JST).strftime('%Y-%m-%d %H:%M:%S JST')}")
 

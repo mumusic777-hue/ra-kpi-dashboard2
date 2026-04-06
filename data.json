@@ -369,6 +369,28 @@
           }
         }
       }
+    },
+    "selection": {
+      "書類通過数": {
+        "actual": 125,
+        "target": 0
+      },
+      "一次面接数": {
+        "actual": 74,
+        "target": 0
+      },
+      "二次面接数": {
+        "actual": 3,
+        "target": 0
+      },
+      "最終面接数": {
+        "actual": 20,
+        "target": 0
+      },
+      "内定数": {
+        "actual": 10,
+        "target": 0
+      }
     }
   }
 }

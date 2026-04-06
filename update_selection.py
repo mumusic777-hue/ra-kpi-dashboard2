@@ -18,7 +18,7 @@ RA KPI Dashboard - 選考パイプライン 自動更新
   スプレッドシートを「リンクを知っている全員が閲覧可」に設定してください。
 """
 
-import sys, os, csv, io, re, urllib.request, urllib.error
+import sys, os, csv, io, re, json, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8","utf8"):
@@ -119,6 +119,31 @@ def update_selection_in_html(content: str, ym: str, key: str, new_val: int) -> t
 
 
 # =====================================================================
+# data.json 書き込み
+# =====================================================================
+DATA_JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.json")
+
+def write_selection_data_json(ym: str, values: dict):
+    """選考パイプラインデータを data.json に書き込む。"""
+    try:
+        with open(DATA_JSON_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        data = {}
+
+    data.setdefault(ym, {})
+    data[ym].setdefault("selection", {})
+    for label, val in values.items():
+        html_key = STATUS_MAP[label]
+        data[ym]["selection"].setdefault(html_key, {"actual": 0, "target": 0})
+        data[ym]["selection"][html_key]["actual"] = val
+
+    with open(DATA_JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  💾 data.json を更新しました（selection: {ym}）")
+
+
+# =====================================================================
 # メイン
 # =====================================================================
 def main():
@@ -157,7 +182,10 @@ def main():
             f.write(content)
         print(f"  💾 index.html を保存しました")
     else:
-        print("  index.html を更新できませんでした")
+        print("  ⚠️  index.html の更新項目なし（新月度の場合は正常）")
+
+    # data.json にも書き込む（HTML 更新の成否に関わらず）
+    write_selection_data_json(cur_ym, values)
 
     print(f"[完了] {datetime.now(JST).strftime('%Y-%m-%d %H:%M:%S JST')}")
 
