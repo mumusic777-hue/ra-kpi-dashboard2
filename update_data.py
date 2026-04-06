@@ -142,7 +142,7 @@ def get_kpi_month_and_week(dt: datetime) -> tuple:
     """日付から (ym_string, week_number) を返す。"""
     # この日の属する週の金曜日を求める
     wd = dt.weekday()  # 月=0..日=6
-    days_to_fri = (4 - wd) % 7
+    days_to_fri = 4 - wd  # 負値=過去方向（土日は同週の金曜を参照）
     friday = dt + timedelta(days=days_to_fri)
     # 金曜日のカレンダー月がKPI月
     kpi_y, kpi_m = friday.year, friday.month

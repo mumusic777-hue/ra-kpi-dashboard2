@@ -151,7 +151,7 @@ def _kpi_month_start(y: int, m: int) -> datetime:
 def get_kpi_month_and_week(dt: datetime) -> tuple:
     """日付から (ym_string, week_number) を返す"""
     wd = dt.weekday()  # 月=0..日=6
-    days_to_fri = (4 - wd) % 7
+    days_to_fri = 4 - wd  # 負値=過去方向（土日は同週の金曜を参照）
     friday = dt + timedelta(days=days_to_fri)
     kpi_y, kpi_m = friday.year, friday.month
     ym = f"{kpi_y:04d}-{kpi_m:02d}"
